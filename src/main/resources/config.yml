@@ -1,0 +1,10 @@
+debug: false
+
+## Supported version numbers can be found here:
+###### http://wiki.vg/Protocol_version_numbers
+supported-versions:
+  - 47
+  - 107
+  - 108
+  - 109
+  - 110

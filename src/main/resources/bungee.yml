@@ -1,0 +1,9 @@
+name: NoMore
+
+author: Cory Redmond
+
+main: co.ryred.nomore.NoMorePlugin
+
+version: ${pom.version}
+
+description: Allows supporting versions in the MOTD.
