@@ -47,7 +47,7 @@
 
         <defaultGoal>clean install</defaultGoal>
 
-        <finalName>CoriCraft</finalName>
+        <finalName>NoMore</finalName>
 
         <resources>
             <resource>
