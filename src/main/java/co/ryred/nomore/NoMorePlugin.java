@@ -93,10 +93,16 @@ public class NoMorePlugin extends BungeePlugin implements Listener {
 
 	private void doReload( CommandSender sender ) {
 
-		onDisable();
-		reloadConfig();
-		onLoad();
-		onEnable();
+		try {
+			onDisable();
+			reloadConfig();
+			onLoad();
+			onEnable();
+		} catch ( Exception ex ) {
+			ex.printStackTrace();
+			sender.sendMessage( ChatColor.translateAlternateColorCodes( '&', "&cError reloading NoMore..." ) );
+			sender.sendMessage( ChatColor.translateAlternateColorCodes( '&', "&c" + ex.getMessage() ) );
+		}
 
 		sender.sendMessage( ChatColor.translateAlternateColorCodes( '&', "&eReloaded NoMore." ) );
 
