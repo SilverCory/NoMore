@@ -117,7 +117,7 @@ public class NoMorePlugin extends BungeePlugin implements Listener {
 	public void onProxyPing( ProxyPingEvent event ) {
 
 		int currentVersion = event.getResponse().getVersion().getProtocol();
-		if( supportedVersions.contains( currentVersion ) )
+		if( !supportedVersions.contains( currentVersion ) )
 			event.getResponse().getVersion().setProtocol( currentVersion + 2 );
 
 	}
